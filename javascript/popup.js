@@ -11,7 +11,7 @@ $(document).ready(function () {
       for ( i = 0; i < 20; i++ ) {
       re = new RegExp("<a.*?href=\'([^']*?)\'.*?itemprop=\'item\'>\n.*?<span.*?itemprop=\'name\'>(.+?)<\/span>\n.*?<\/a>", "gi");
       myArray = re.exec(matches[i]);
-      $("#rawContainer ul").append('<li><i class="fa fa-chevron-right"></i> <a href="http://daynhauhoc.com' + myArray[1] + '">' + myArray[2] + '</a></li>');
+      $("#rawContainer ul").append('<li><i class="fa fa-chevron-right"></i> <a href="http://daynhauhoc.com' + myArray[1] + '" target="_blank">' + myArray[2] + '</a></li>');
       }
     }
     endDNH();
