@@ -1,0 +1,30 @@
+{
+"browser_action": {
+    "default_icon": "images/icon_19.png",
+    "default_title": "__MSG_defaultTitle__",
+    "default_popup": "popup.html"
+},
+"background": {
+    "scripts": ["javascript/background.js", "javascript/analytics.js"]
+},
+    "default_locale": "vi",
+    "description": "__MSG_extDesc__",
+    "icons": {
+        "16": "images/icon_16.png",
+        "19": "images/icon_19.png",
+        "32": "images/icon_32.png",
+        "64": "images/icon_64.png",
+        "128": "images/icon_128.png"
+    },
+    "manifest_version": 2,
+    "name": "__MSG_extName__",
+"permissions": [
+    "tabs",
+    "activeTab",
+    "http://*.daynhauhoc.com/*",
+    "https://*.daynhauhoc.com/*",
+    "storage"
+],
+    "content_security_policy": "script-src 'self' https://*.google-analytics.com; object-src 'self'",
+    "version": "1.2.0"
+}

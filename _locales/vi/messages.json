@@ -1,0 +1,14 @@
+{
+   "defaultTitle": {
+      "description": "Default title to display",
+      "message": "Day Nhau Hoc"
+   },
+   "extDesc": {
+      "description": "Update news feed of  DayNhauHoc.com",
+      "message": "Cập nhật bài viết từ trang DayNhauHoc.com"
+   },
+   "extName": {
+      "description": "Update news feed of  DayNhauHoc.com",
+      "message": "Day Nhau Hoc"
+   }
+}
