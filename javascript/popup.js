@@ -5,7 +5,7 @@ $(document).ready(function () {
     url: 'http://daynhauhoc.com/latest.json',
     type: 'GET',
     dataType: 'json',
-    data: {page: 1}
+    data: {page: 0}
   })
   .done(function(data) {
     console.log("success");
