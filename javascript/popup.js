@@ -1,26 +1,29 @@
 $(document).ready(function () {
   startDNH();
 
-  $.get('http://daynhauhoc.com/' , function() {
-    console.log('Send Success !');
+  $.ajax({
+    url: 'http://daynhauhoc.com/latest.json',
+    type: 'GET',
+    dataType: 'json',
+    data: {page: 1}
   })
-  .done(function(response) {
-    matches = response.match(/<a.*?href=\'([^']*?)\'.*?itemprop=\'item\'>\n.*?(.+?)\n.*?<\/a>/gi);
+  .done(function(data) {
+    console.log("success");
+    var topics = data.topic_list.topics;
 
-    if ( matches != null) {
-      for ( i = 0; i < 20; i++ ) {
-      re = new RegExp("<a.*?href=\'([^']*?)\'.*?itemprop=\'item\'>\n.*?<span.*?itemprop=\'name\'>(.+?)<\/span>\n.*?<\/a>", "gi");
-      myArray = re.exec(matches[i]);
-      $("#rawContainer ul").append('<li><i class="fa fa-chevron-right"></i> <a href="http://daynhauhoc.com' + myArray[1] + '" target="_blank">' + myArray[2] + '</a></li>');
-      }
-    }
+    $.each(topics, function(index, value) {
+      $("#rawContainer ul").append('<li><i class="fa fa-chevron-right"></i> <a href="http://daynhauhoc.com/t/' + value["slug"] + '/" target="_blank">' + value["title"] + '</a></li>');
+    });
     endDNH();
-
   })
   .fail(function() {
+    console.log("error");
+
     $("#rawContainer").html("<strong>Có lỗi xảy ra !</strong>");
     endDNH();
-
+  })
+  .always(function() {
+    console.log("complete");
   });
 
   function startDNH(){
