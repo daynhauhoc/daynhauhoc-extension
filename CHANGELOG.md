@@ -1,5 +1,12 @@
 # DayNhauHoc-Extension Changelog
 
+### 1.2
+* Add link header
+* Add count notifications
+* Add read more
+* Improved javascript
+* Improved CSS
+
 ### 1.1
 * Change json url to get data
 * Improved javascript

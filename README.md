@@ -11,7 +11,7 @@ DayNhauHoc Extension
 
 ## Hướng dẫn sử dụng
 
-* Đầu tiên tải về tệp **daynhauhoc-extension.crx** [tại đây](https://drive.google.com/file/d/0B2Ee2xxJTXgwa1hFUGt3Q2UxcEE/view?usp=sharing)
+* Đầu tiên tải về tệp **daynhauhoc-extension.crx** [tại đây](https://drive.google.com/file/d/0B2Ee2xxJTXgwOEJjbEw5NWxrYU0/view?usp=sharing)
 * Mở trình duyệt Chrome, Cốc Cốc, Opera, Chromium.
 * Truy cập vào cài đặt -> tiện ích
 * Kéo thả tệp **daynhauhoc-extension.crx** và đó.

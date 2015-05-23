@@ -5,7 +5,7 @@
     "default_popup": "popup.html"
 },
 "background": {
-    "scripts": ["javascript/background.js", "javascript/analytics.js"]
+    "scripts": ["javascript/jquery-1.7.2.min.js", "javascript/background.js", "javascript/analytics.js"]
 },
     "default_locale": "vi",
     "description": "__MSG_extDesc__",
@@ -26,5 +26,5 @@
     "storage"
 ],
     "content_security_policy": "script-src 'self' https://*.google-analytics.com; object-src 'self'",
-    "version": "1.1"
+    "version": "1.2"
 }
